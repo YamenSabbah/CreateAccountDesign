@@ -73,7 +73,12 @@ label {
 .container .check-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
+}
+.container .check-box div {
+  display: flex;
+  align-items: center;
 }
 input[type="checkbox"] {
   box-shadow: none;
@@ -132,6 +137,9 @@ input[type="checkbox"] {
   box-shadow: none;
   translate: 0px 5px;
 }
+.box .check-box label {
+  font-size: 0.9em;
+}
 /*^------------------------------------> Media Querys <---------------------------------   */
 @media (max-width: 30em) {
   .container .box {
@@ -152,5 +160,18 @@ input[type="checkbox"] {
   to {
     visibility: visible;
     opacity: 1;
+  }
+}
+@media (max-width: 400px) {
+  .box .login p {
+    font-size: 0.9em;
+  }
+  .box .login a {
+    font-size: 0.6em;
+  }
+  .box .login {
+  }
+  .box .check-box label {
+    font-size: 0.8em;
   }
 }
